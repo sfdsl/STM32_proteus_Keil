@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"ad_ex\startup_stm32f103x6.o"
+"ad_ex\system_stm32f1xx.o"
+"ad_ex\stm32f1xx_hal_msp.o"
+"ad_ex\stm32f1xx_it.o"
+"ad_ex\main.o"
+"ad_ex\bsp-lcd1602.o"
+"ad_ex\delay.o"
+"ad_ex\stm32f1xx_hal_flash.o"
+"ad_ex\stm32f1xx_hal_gpio_ex.o"
+"ad_ex\stm32f1xx_hal_rcc_ex.o"
+"ad_ex\stm32f1xx_hal_pwr.o"
+"ad_ex\stm32f1xx_hal_gpio.o"
+"ad_ex\stm32f1xx_hal_flash_ex.o"
+"ad_ex\stm32f1xx_hal_tim.o"
+"ad_ex\stm32f1xx_hal_tim_ex.o"
+"ad_ex\stm32f1xx_hal.o"
+"ad_ex\stm32f1xx_hal_dma.o"
+"ad_ex\stm32f1xx_hal_rcc.o"
+"ad_ex\stm32f1xx_hal_cortex.o"
+--library_type=microlib --strict --scatter "AD_ex\AD_ex.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AD_ex.map" -o AD_ex\AD_ex.axf
